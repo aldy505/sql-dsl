@@ -12,7 +12,6 @@ export default {
       format: 'esm',
     },
   ],
-  external: ['crypto', 'fs', 'path'],
   plugins: [
     ts(),
   ],

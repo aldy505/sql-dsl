@@ -1,6 +1,6 @@
 export interface SqlObject {
   sql: string
-  values: TemplateStringsArray
+  values: any[]
   formatQuestion?: () => SqlObject
   formatColon?: () => SqlObject
   formatAtP?: () => SqlObject
@@ -22,7 +22,7 @@ export interface SqlObject {
  * const colon = query.formatColon()
  * // colon.sql = 'select * from users where email = :1'
  */
-export function sql(string: string[], ...params: TemplateStringsArray): SqlObject {
+export function sql(string: TemplateStringsArray, ...params: any[]): SqlObject {
   const sql = string.map((v, i) => (string.length - 1 === i) ? v : `${v}$${i + 1}`).join('');
 
   function formatQuestion(): SqlObject {
