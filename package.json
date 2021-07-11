@@ -1,17 +1,17 @@
 {
-  "name": "sql-dsn",
+  "name": "sql-dsl",
   "version": "0.0.1",
   "description": "SQL as template literal",
   "author": "Reinaldy Rafli <aldy505@tutanota.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aldy505/sql-dsn.git"
+    "url": "git+https://github.com/aldy505/sql-dsl.git"
   },
   "bugs": {
-    "url": "https://github.com/aldy505/sql-dsn/issues"
+    "url": "https://github.com/aldy505/sql-dsl/issues"
   },
-  "homepage": "https://github.com/aldy505/sql-dsn#readme",
+  "homepage": "https://github.com/aldy505/sql-dsl#readme",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",

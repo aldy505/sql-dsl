@@ -1,4 +1,4 @@
-# SQL DSN for your Node App
+# SQL DSL for your Node App
 
 Based on an idea from [@ronnygunawan](https://github.com/ronnygunawan). This was supposed to be a challenge for someone else, but I thought, why not? Lol.
 
@@ -8,7 +8,7 @@ As always:
 * No external dependencies
 
 ```bash
-npm install sql-dsn
+npm install sql-dsl
 ```
 
 ## What this does?
@@ -16,7 +16,7 @@ npm install sql-dsn
 This outputs simple SQL query & argument object from your template literal string.
 
 ```js
-import { sql } from 'sql-dsn'
+import { sql } from 'sql-dsl'
 
 const query = sql`INSERT INTO users (name, email, age) VALUES (${`Thomas Worgdjik`}, ${`thom@thunder.zn`}, ${30})`
 
@@ -56,4 +56,4 @@ const atp = query.formatAtP()
 // }
 ```
 
-Want more features? Open something up on [issues](https://github.com/aldy505/sql-dsn).
+Want more features? Open something up on [issues](https://github.com/aldy505/sql-dsl).
