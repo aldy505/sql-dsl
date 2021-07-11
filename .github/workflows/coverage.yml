@@ -1,0 +1,36 @@
+name: Code Coverage
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  coverage:
+    name: Codecov
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14
+
+    - name: Installing dependencies
+      run: yarn install
+    
+    - name: Lint
+      run: yarn run lint
+
+    - name: Running test
+      run: yarn run test
+
+    - name: Upload to Codecov
+      uses: codecov/codecov-action@v1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}

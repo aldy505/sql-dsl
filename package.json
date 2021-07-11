@@ -1,0 +1,58 @@
+{
+  "name": "sql-dsn",
+  "version": "0.0.1",
+  "description": "SQL as template literal",
+  "author": "Reinaldy Rafli <aldy505@tutanota.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldy505/sql-dsn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aldy505/sql-dsn/issues"
+  },
+  "homepage": "https://github.com/aldy505/sql-dsn#readme",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json",
+    "./*": "./*"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "directories": {
+    "lib": "./src",
+    "test": "./test"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint --ext .js,.ts --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ext .js,.ts --ignore-path .gitignore .",
+    "coverage": "c8 --reporter=text --reporter=lcov yarn run uvu",
+    "uvu": "uvu -r esbuild-register test",
+    "tdd": "yarn -s uvu; watchlist src/ -- yarn -s uvu",
+    "test": "yarn run coverage"
+  },
+  "devDependencies": {
+    "@types/node": "^16.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "c8": "^7.7.3",
+    "esbuild-register": "^2.6.0",
+    "eslint": "^7.30.0",
+    "eslint-config-xo-space": "^0.28.0",
+    "rollup": "^2.53.1",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.3.5",
+    "uvu": "^0.5.1",
+    "watchlist": "^0.2.3"
+  }
+}
