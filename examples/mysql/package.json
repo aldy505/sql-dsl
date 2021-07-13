@@ -1,0 +1,11 @@
+{
+  "name": "mysql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Reinaldy Rafli <aldy505@tutanota.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "sql-dsl": "^0.0.1"
+  }
+}

@@ -30,7 +30,8 @@
   ],
   "directories": {
     "lib": "./src",
-    "test": "./test"
+    "test": "./test",
+    "example": "./examples"
   },
   "scripts": {
     "build": "rollup -c",
