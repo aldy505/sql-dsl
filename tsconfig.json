@@ -1,13 +1,4 @@
-  
 {
-  "ts-node": {
-    "compilerOptions": {
-      "module": "commonjs"
-    },
-    "include": [
-      "tests/**/*"
-    ]
-  },
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
@@ -26,7 +17,8 @@
     "skipLibCheck": true,
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "newLine": "lf"
   },
   "exclude": ["test", "dist"]
 }

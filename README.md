@@ -1,5 +1,7 @@
 # SQL DSL for your Node App
 
+[![npm](https://img.shields.io/npm/v/sql-dsl?style=flat-square) ![npm bundle size](https://img.shields.io/bundlephobia/min/sql-dsl?style=flat-square) ![npm](https://img.shields.io/npm/dm/sql-dsl?style=flat-square)](https://www.npmjs.com/package/sql-dsl) [![Codecov](https://img.shields.io/codecov/c/github/aldy505/sql-dsl?style=flat-square)](https://codecov.io/gh/aldy505/sql-dsl) [![GitHub branch checks state](https://img.shields.io/github/checks-status/aldy505/sql-dsl/master?style=flat-square)](https://github.com/aldy505/sql-dsl/actions) [![CodeFactor](https://www.codefactor.io/repository/github/aldy505/sql-dsl/badge)](https://www.codefactor.io/repository/github/aldy505/sql-dsl) [![GitHub](https://img.shields.io/github/license/aldy505/sql-dsl?style=flat-square)](https://github.com/aldy505/sql-dsl/blob/master/LICENSE)
+
 Based on an idea from [@ronnygunawan](https://github.com/ronnygunawan). This was supposed to be a challenge for someone else, but I thought, why not? Lol.
 
 As always:
@@ -56,4 +58,6 @@ const atp = query.formatAtP()
 // }
 ```
 
-Want more features? Open something up on [issues](https://github.com/aldy505/sql-dsl).
+## Hey, I want a feature!
+
+Want more features? Open something up on [issues](https://github.com/aldy505/sql-dsl). To be honest, I don't know what else to add.

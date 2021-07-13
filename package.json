@@ -41,11 +41,18 @@
     "tdd": "yarn -s uvu; watchlist src/ -- yarn -s uvu",
     "test": "yarn run coverage"
   },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "devDependencies": {
     "@types/node": "^16.3.1",
-    "@typescript-eslint/eslint-plugin": "^4.28.2",
-    "@typescript-eslint/parser": "^4.28.2",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
     "c8": "^7.7.3",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "esbuild-register": "^2.6.0",
     "eslint": "^7.30.0",
     "eslint-config-xo-space": "^0.28.0",
