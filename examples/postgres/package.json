@@ -6,6 +6,6 @@
   "license": "MIT",
   "dependencies": {
     "pg": "^8.6.0",
-    "sql-dsl": "^0.0.1"
+    "sql-dsl": "^0.0.2"
   }
 }
