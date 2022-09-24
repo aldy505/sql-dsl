@@ -1,5 +1,5 @@
-import { defineConfig } from "rollup";
-import ts from "@rollup/plugin-typescript";
+import {defineConfig} from 'rollup';
+import ts from '@rollup/plugin-typescript';
 
 export default defineConfig({
   input: 'src/index.ts',
@@ -14,6 +14,6 @@ export default defineConfig({
     },
   ],
   plugins: [
-    ts({ tsconfig: "./tsconfig.json" }),
+    ts({tsconfig: './tsconfig.json'}),
   ],
 });
