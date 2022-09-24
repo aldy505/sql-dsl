@@ -37,10 +37,10 @@
     "build": "rollup -c",
     "lint": "eslint --ext .js,.ts --ignore-path .gitignore .",
     "lint:fix": "eslint --fix --ext .js,.ts --ignore-path .gitignore .",
-    "coverage": "c8 --reporter=text --reporter=lcov yarn run uvu",
-    "uvu": "uvu -r esbuild-register test",
-    "tdd": "yarn -s uvu; watchlist src/ -- yarn -s uvu",
-    "test": "yarn run coverage"
+    "coverage": "c8 --reporter=text --reporter=lcov npm run uvu",
+    "uvu": "uvu -r esbuild-register",
+    "tdd": "uvu -r esbuild-register; watchlist src/ -- uvu -r esbuild-register",
+    "test": "npm run coverage"
   },
   "config": {
     "commitizen": {
